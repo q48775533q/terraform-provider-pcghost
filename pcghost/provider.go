@@ -4,7 +4,7 @@ import (
         "net/url"
 
         "github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-        sdk "github.com/terraform-in-action/go-petstore"
+        sdk "github.com/q48775533q/go-petstore"
 )
 
 // Provider returns a *schema.Provider.
@@ -23,7 +23,7 @@ func Provider() *schema.Provider {
                 },
 
                 ResourcesMap: map[string]*schema.Resource{
-                        "petstore_pet": resourcePSPet(),
+                        "pcghost_pet": resourcePSPet(),
                 },
 
                 ConfigureFunc: providerConfigure,
