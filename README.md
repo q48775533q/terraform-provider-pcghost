@@ -48,6 +48,7 @@ terraform apply
 
 
 
+```
 ├── example
 │   └── main.tf             < -- terraform 范例
 ├── go.mod
@@ -78,6 +79,6 @@ terraform apply
     │       └── orm.go
     └── README.md
 
-
+```
 
 本仓库参考 terraform 实战编写
