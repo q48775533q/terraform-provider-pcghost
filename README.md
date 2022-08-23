@@ -2,6 +2,7 @@
 
 ```bash
 mkdir ${GOPATH}/src
+cd ${GOPATH}/src
 git clone https://github.com/q48775533q/terraform-provider-pcghost.git
 # 准备一个mysql数据库用作api服务的模拟。并建立相应的数据库，用户名和密码
 yum install -y mariadb-server
@@ -22,6 +23,8 @@ export rds_port=3306
 export rds_database=pets
 
 cd ${GOPATH}/src/terraform-provider-pcghost/server
+go mod init
+go mod tidy
 go run .
 
 cd ${GOPATH}/src/terraform-provider-pcghost/
